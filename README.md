@@ -21,3 +21,8 @@ $ npm start
 
 ### materialize-cssでUI構築
 - `yarn add materialize-css`でUI設定
+
+### spotifyの設定
+- FBとかでspotify developerに入ってログイン
+- createa的なボタンぽちっと
+- `https://github.com/loverajoel/spotify-sdk`をyarn/npmでインストール
