@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import './index.css'
 import 'materialize-css/dist/css/materialize.min.css'
+import SongItem from './SongItem'
+
 
 class Index extends Component{
   constructor(){
@@ -25,9 +27,11 @@ class Index extends Component{
               <i className="fa fa-search"></i>
               </a>
             </div>
-            <div>
-              {/* todo*/}
-            </div>
+          </div>
+        </div>
+        <div className="card INdex-results-card">
+          <div className="card-content">
+          
           </div>
         </div>
       </div>
