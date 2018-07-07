@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import './index.css'
 import 'materialize-css/dist/css/materialize.min.css'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
 import SongItem from './SongItem'
 
 
@@ -12,6 +14,7 @@ class Index extends Component{
     }
   }
   render(){
+    console.log(this.props)
     return(
       <div className="Index">
         <div className="card">
@@ -39,4 +42,18 @@ class Index extends Component{
   }
 }
 
-export default Index;
+
+function mapStateToProps(state){
+  return {
+    routes: state.routes
+  };
+}
+
+function mapDispatchToProps(dispatch){
+  return bindActionCreators({
+
+  }, dispatch)
+}
+
+
+export default connect(mapStateToProps,mapDispatchToProps)(Index);
