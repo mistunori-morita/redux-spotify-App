@@ -3,15 +3,16 @@ import { Route, Router } from 'react-router'
 import PropTypes from 'prop-types'
 import './App.css'
 
-import Home from './views/Home'
+import Index from './views/index'
+import Player from './views/player'
 
 class App extends Component {
   render() {
     return (
       <Router history={ this.props.history }>
         <div>
-          <Route exact path="/" component={ Home }/>
-          {/* Here you can put more routes on */}
+          <Route exact path="/" component={ Index }/>
+          <Route path="/player/:songId" component={ Player }/>
         </div>
       </Router>
     );
