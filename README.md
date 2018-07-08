@@ -26,6 +26,3 @@ $ npm start
 - FBとかでspotify developerに入ってログイン
 - createa的なボタンぽちっと
 - `https://github.com/loverajoel/spotify-sdk`をyarn/npmでインストール
-
-### spotifyの注意
-- ![注意](https://github.com/mistunori-morita/redux-spotify-App/blob/master/img/1.png)
